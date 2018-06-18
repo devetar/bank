@@ -1,0 +1,4 @@
+• Improvements should start with model improvement (finding the bank and the account based on the account number is duplicated).
+Unique fields are needed (e.g. right now, one customer can't have two or more accounts with the same id, but two diferrent customers can) Transfer logic should be split into more readable methods.
+• Account should be aware of the customer holding it, and the customer should be aware of the bank. Exceptions should be used to handle expected mistakes.
+• Account should have blocking transfers list so that 'clearing' can be synchronous.
